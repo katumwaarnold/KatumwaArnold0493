@@ -1,6 +1,6 @@
 # KatumwaArnold0493
-Excercises  ' Store student marks in the text file used streamWriter
-    Using writer As New StreamWriter(fileName, False)
+Excercises  ' Store student marks in the text file used streamWriter 
+Using writer As New StreamWriter(fileName, False)
         writer.WriteLine("ST001, Shaminah, 85")
         writer.WriteLine("ST002, Mahoro, 84")
         writer.WriteLine("ST003, Saum, 82")
@@ -8,7 +8,7 @@ Excercises  ' Store student marks in the text file used streamWriter
     End Using
     Console.WriteLine("Student marks saved successfully!")
     Console.WriteLine()
-    ' Read student marks
+    'Read student marks
     Console.WriteLine("STUDENT NO  NAME   MARKS")
     Console.WriteLine("---------------------------")
 

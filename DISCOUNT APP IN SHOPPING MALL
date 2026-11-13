@@ -1,0 +1,32 @@
+Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
+Dim val1, val2 As Double
+If GetValidInputs(val1, val2) Then
+lblResult.Text = (val1 + val2).ToString()
+End If
+End Sub
+
+Private Sub btnSubtract_Click(sender As Object, e As EventArgs) Handles btnSubtract.Click
+    Dim val1, val2 As Double
+    If GetValidInputs(val1, val2) Then
+        lblResult.Text = (val1 - val2).ToString()
+    End If
+End Sub
+
+Private Sub btnMultiply_Click(sender As Object, e As EventArgs) Handles btnMultiply.Click
+    Dim val1, val2 As Double
+    If GetValidInputs(val1, val2) Then
+        lblResult.Text = (val1 * val2).ToString()
+    End If
+End Sub
+
+Private Sub btnDivide_Click(sender As Object, e As EventArgs) Handles btnDivide.Click
+    Dim val1, val2 As Double
+    If GetValidInputs(val1, val2) Then
+        ' Additional validation for division by zero
+        If val2 = 0 Then
+            MessageBox.Show("Cannot divide by zero.", "Math Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        Else
+            lblResult.Text = (val1 / val2).ToString()
+        End If
+    End If
+End Sub
